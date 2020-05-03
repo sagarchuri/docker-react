@@ -9,7 +9,7 @@ before_install:
 script:
     - docker run -e CI=true sagarchuri/docker-react npm run test
     
- deploy:
+deploy:
   provider: elasticbeanstalk
   region: "eu-west-2"
   app: "docker-react"
